@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="origin"
+		fetch="git://github.com" />
+
+	<default remote="origin" revision="master"/>
+
+	<project name="tobetter/hwpack.odroid" path="hwpack.odroid"/>
+	<project name="tobetter/linux" path="linux"/>
+	<project name="tobetter/ubuntu-kernel-ci" path="ubuntu-kernel-ci"/>
+	<project name="tobetter/board-config" path="board-config"/>
+	<project name="tobetter/linaro-image-tools" path="linaro-image-tools"/>
+</manifest>
