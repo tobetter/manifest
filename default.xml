@@ -3,11 +3,11 @@
 	<remote name="origin"
 		fetch="git://github.com" />
 
-	<default remote="origin" revision="master"/>
+	<default remote="origin" revision="v3.8.y"/>
 
-	<project name="tobetter/hwpack.odroid" path="hwpack.odroid"/>
+	<project name="tobetter/hwpack.odroid" path="hwpack.odroid" revision="master"/>
 	<project name="tobetter/linux" path="linux"/>
 	<project name="tobetter/ubuntu-kernel-ci" path="ubuntu-kernel-ci"/>
 	<project name="tobetter/board-config" path="board-config"/>
-	<project name="tobetter/linaro-image-tools" path="linaro-image-tools"/>
+	<project name="tobetter/linaro-image-tools" path="linaro-image-tools" revision="master"/>
 </manifest>
