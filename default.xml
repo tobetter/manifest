@@ -10,4 +10,5 @@
 	<project name="tobetter/ubuntu-kernel-ci" path="ubuntu-kernel-ci"/>
 	<project name="tobetter/board-config" path="board-config"/>
 	<project name="tobetter/linaro-image-tools" path="linaro-image-tools"/>
+	<project name="tobetter/ubuntu-build-service" path="ubuntu-build-service"/>
 </manifest>
