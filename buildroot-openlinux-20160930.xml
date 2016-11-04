@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="openlinux" fetch="git://openlinux.amlogic.com/"/>
+	<remote name="openlinux" fetch="../../"/>
 	<default dest-branch="buildroot-20160930" revision="buildroot-openlinux-20160930" remote="openlinux" sync-j="4"/>
 	<project name="buildroot/linux/buildroot" path="buildroot" revision="1d454fb4715c84c8781d9be4bbaf4faf3541d193" upstream="buildroot-openlinux-20160930">
 	  <copyfile dest="Makefile" src="build/Makefile"/>
