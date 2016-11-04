@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="openlinux" fetch="git://openlinux.amlogic.com/"/>
+	<default dest-branch="buildroot-20160930" revision="buildroot-openlinux-20160930" remote="openlinux" sync-j="4"/>
+	<project name="buildroot/linux/buildroot" path="buildroot" revision="1d454fb4715c84c8781d9be4bbaf4faf3541d193" upstream="buildroot-openlinux-20160930">
+	  <copyfile dest="Makefile" src="build/Makefile"/>
+	</project>
+	<project name="buildroot/kernel/common" path="kernel" revision="7d719f731967df130414f93c1cec77dab38c770a" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/uboot" path="uboot" revision="aadd53ea5a365f1e258551075fbe3edda72cde00" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux" path="toolchain/gcc/aarch64" revision="7c3e394f70c9b2161d561c386572f1d6be21259f" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/arm/gpu" path="hardware/arm/gpu" revision="deb77fae759b645ab802f872d8dba02d7f5db21e" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/amlogic/nand" path="hardware/amlogic/nand" revision="bcb9e0b588b79d0c85d6ca0464fdee7459b9e1a6" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/amlogic/pmu" path="hardware/amlogic/pmu" revision="97738d04cd4155f62a2a3a794a24c8a23a745d6e" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/amlogic/thermal" path="hardware/amlogic/thermal" revision="e3cf13d1096d3c2981be409d2a34a011fc8a404c" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/amlogic/touch" path="hardware/amlogic/touch" revision="f432bdc3c2f4804f97dbfa77b7e92fcec6133880" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" revision="8c65191d4585a66f3b193e3761996077199bb22e" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/amlogic/wifi" revision="43a4cd66d2b721c18874af43e4f92b615c7f8007" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/wifi/realtek/drivers/8188eu" revision="dc79a5866147c9252dcf5c28ab3fbbd00675987f" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7601" path="hardware/wifi/mtk/drivers/mt7601" revision="4e61a615f0a5a613898dc98a0b2a423ad85b11fb" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7603" path="hardware/wifi/mtk/drivers/mt7603" revision="0c53dfb9461f9b12c5d950996afdfe0f2f971fee" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188ftv" path="hardware/wifi/realtek/drivers/8188ftv" revision="e70bb63b4da679a273b0f674b014874982b1fb19" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192cu" path="hardware/wifi/realtek/drivers/8192cu" revision="4f9ce1fbafd98e0e635cd9a65b855154796bd8c9" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192du" path="hardware/wifi/realtek/drivers/8192du" revision="f685202d762eaa8824cfba829d26dc1632f12e5b" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192eu" path="hardware/wifi/realtek/drivers/8192eu" revision="26cb28e34023de5e7eec8e6dd4dd0d3b26f386d9" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192es" path="hardware/wifi/realtek/drivers/8192es" revision="00874698c744589d0d5f529de3d5abfc3c1a545d" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/wifi/realtek/drivers/8189es" revision="0bce5917b9d15dcfb07a7fab1a0242c1ddbca55d" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/wifi/realtek/drivers/8189ftv" revision="b9e8fcf8f38513db3fa3df577500fe9b0623e08b" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/wifi/realtek/drivers/8723bs" revision="090ef42dfa4a4abcf6c48ba028640d34c272f149" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723au" path="hardware/wifi/realtek/drivers/8723au" revision="7e3ec155dfa552d57418bc1dadbb1d9ac80afc1d" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8811au" path="hardware/wifi/realtek/drivers/8811au" revision="65c3d491ff67c6320576f87d7be895f7547a5e57" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8812au" path="hardware/wifi/realtek/drivers/8812au" revision="4c7346680e8e2778b3d228593325ad8a6e7f1eac" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bu" path="hardware/wifi/realtek/drivers/8723bu" revision="c7dbc3203819943380b04e9ffcdec09028887e22" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/wifi/realtek/drivers/8822bu" revision="f0a0dcc5784661437bf164081f21c7b64f1476b1" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/wifi/broadcom/drivers/ap6xxx" revision="0adaa230aadca3a6020d8f4437fad1bf8da7f17f" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/usi" path="hardware/wifi/broadcom/drivers/usi" revision="583b48637f6abfe13074075d7af734cfe0e4f185" upstream="buildroot-openlinux-20160930"/>
+	<project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/wifi/qualcomm/drivers/qca9377" revision="6031e83155abdc373f1448ff7fa82cfb94677ee2" upstream="buildroot-openlinux-20160930"/>
+</manifest>
