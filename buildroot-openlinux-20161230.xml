@@ -2,10 +2,10 @@
 <manifest>
 	<remote name="openlinux" fetch="../../"/>
 	<default dest-branch="buildroot-20161230" revision="buildroot-openlinux-20161230" remote="openlinux" sync-j="4"/>
-	<project name="buildroot/linux/buildroot" path="buildroot"  revision="6b38919190bd8f25dd743deb167c1e257ad4afbd" upstream="buildroot-openlinux-20161230">
+	<project name="buildroot/linux/buildroot" path="buildroot"  revision="ef5c2389b5f8c3622552ac639833a27da217f799" upstream="buildroot-openlinux-20161230">
 	  <copyfile dest="Makefile" src="build/Makefile"/>
 	</project>
-	<project name="buildroot/kernel/common" path="kernel/aml-3.14" revision="73ce4d4f2a407f456dab47b1efab8da809b95115" upstream="buildroot-openlinux-3.14-20161230"/>
+	<project name="buildroot/kernel/common" path="kernel/aml-3.14" revision="4586e846b58f9133b0ce796287431bcc09a7843e" upstream="buildroot-openlinux-3.14-20161230"/>
 	<project name="buildroot/kernel/common" path="kernel/aml-3.10" revision="6a70c9d52af27248c7b072ce212268c4462f5263" upstream="buildroot-openlinux-3.10-20161230"/>
 	<project name="buildroot/uboot" path="bootloader/uboot" revision="de6d4b2a77f42dc0bcdd3f79fd70dd723bc53b8f" upstream="buildroot-openlinux-3.10-20161230"/>
 	<project name="buildroot/uboot" path="bootloader/uboot-2015-dev" revision="b9b7489bf4f43849c325a2d4820cfc2b624bc500" upstream="buildroot-openlinux-3.14-20161230"/>
@@ -24,7 +24,7 @@
 	<project name="buildroot/platform/hardware/amlogic/pmu" path="hardware/aml-3.14/amlogic/pmu" revision="97738d04cd4155f62a2a3a794a24c8a23a745d6e" upstream="buildroot-openlinux-3.14-20161230"/>
 	<project name="buildroot/platform/hardware/amlogic/thermal" path="hardware/aml-3.14/amlogic/thermal" revision="e3cf13d1096d3c2981be409d2a34a011fc8a404c" upstream="buildroot-openlinux-3.14-20161230"/>
 	<project name="buildroot/platform/hardware/amlogic/touch" path="hardware/aml-3.14/amlogic/touch" revision="f432bdc3c2f4804f97dbfa77b7e92fcec6133880" upstream="buildroot-openlinux-3.14-20161230"/>
-	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.14/amlogic/wifi" revision="49f5e369dda57e7f0c085395c3482c69f0f2e28a" upstream="buildroot-openlinux-3.14-20161230"/>
+	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.14/amlogic/wifi" revision="7f3f634226d38eb3903705ad8272fce765e2add2" upstream="buildroot-openlinux-3.14-20161230"/>
 	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-3.14/wifi/realtek/drivers/8188eu" revision="dc79a5866147c9252dcf5c28ab3fbbd00675987f" upstream="buildroot-openlinux-3.14-20161230"/>
 	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7601" path="hardware/aml-3.14/wifi/mtk/drivers/mt7601" revision="8299845093f2fa85dca9d14992e5ecf61413d55a" upstream="buildroot-openlinux-3.14-20161230"/>
 	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7603" path="hardware/aml-3.14/wifi/mtk/drivers/mt7603" revision="994f87802c9af32e824717bb3442b3169773a482" upstream="buildroot-openlinux-3.14-20161230"/>
