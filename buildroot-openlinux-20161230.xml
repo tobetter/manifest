@@ -2,7 +2,7 @@
 <manifest>
 	<remote name="openlinux" fetch="../../"/>
 	<default dest-branch="buildroot-20161230" revision="buildroot-openlinux-20161230" remote="openlinux" sync-j="4"/>
-	<project name="buildroot/linux/buildroot" path="buildroot"  revision="ef5c2389b5f8c3622552ac639833a27da217f799" upstream="buildroot-openlinux-20161230">
+	<project name="buildroot/linux/buildroot" path="buildroot"  revision="fa157768a24ee47481e87fedae29b25ba882f168" upstream="buildroot-openlinux-20161230">
 	  <copyfile dest="Makefile" src="build/Makefile"/>
 	</project>
 	<project name="buildroot/kernel/common" path="kernel/aml-3.14" revision="4586e846b58f9133b0ce796287431bcc09a7843e" upstream="buildroot-openlinux-3.14-20161230"/>
