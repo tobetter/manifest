@@ -4,7 +4,7 @@
 
   <default dest-branch="buildroot-openlinux" remote="openlinux" revision="buildroot-openlinux" sync-j="4"/>
 
-  <project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="c966c5d0b7630b2fb962135edfcce55ba1cf3d7c" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="a0c464d95c00e0601a30595dbf014cb38e82356d" upstream="buildroot-openlinux-4.9"/>
   <project name="buildroot/kernel/common" path="kernel/aml-3.14" revision="9cab5f2312712b0ec5c3af5b3d8f56eabe2a8a8b" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/kernel/common" path="kernel/aml-3.10" revision="e974a440539a79b7fdd4c727a4e0d4eb273ba948" upstream="buildroot-openlinux-3.10"/>
   <project name="buildroot/linux/amlogic/chromium" path="vendor/amlogic/chromium" revision="f4850e93c1b4c05fb890b281f45e4dd44192f861" upstream="buildroot-openlinux"/>
