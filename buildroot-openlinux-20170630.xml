@@ -7,7 +7,7 @@
   <project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="353f6cbc26670c8d4a650b8ba7673a661a665069" upstream="buildroot-openlinux-4.9"/>
   <project name="buildroot/kernel/common" path="kernel/aml-3.14" revision="7dbb82d13c61b496fb70647b08a3d900ea058c85" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/kernel/common" path="kernel/aml-3.10" revision="e974a440539a79b7fdd4c727a4e0d4eb273ba948" upstream="buildroot-openlinux-3.10"/>
-  <project name="buildroot/linux/amlogic/chromium" path="vendor/amlogic/chromium" revision="9236d412f3077184e5563fcc7ccd9672f40ef3e4" upstream="buildroot-openlinux-20170630"/>
+  <project name="buildroot/linux/amlogic/chromium" path="vendor/amlogic/chromium" revision="59d8c38e4923d1d768e5e398eac56e2d0b0ef938" upstream="buildroot-openlinux-20170630"/>
   <project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools" revision="31fa6b7cc5cb4dd3acba37872aa6ec24a2f36ca9" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" revision="8c65191d4585a66f3b193e3761996077199bb22e" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/buildroot" path="buildroot" revision="061f112c0e18985950c800b33fa9a0811e90e163" upstream="buildroot-openlinux-20170630">
@@ -64,7 +64,7 @@
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8812au" path="hardware/aml-3.10/wifi/realtek/drivers/8812au" revision="8d2b27aed545ab17c163b1d8f172ea5886a02548" upstream="buildroot-openlinux-3.10"/>
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-4.9/wifi/realtek/drivers/8822bu" revision="d9b12f6d63f02cada310a156eb9d6079d023280a" upstream="buildroot-openlinux-4.9"/>
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-3.14/wifi/realtek/drivers/8822bu" revision="d9b12f6d63f02cada310a156eb9d6079d023280a" upstream="buildroot-openlinux-3.14"/>
-  <project name="buildroot/platform/packages/amlogic/LibPlayer" path="multimedia/libplayer/src" revision="581f1538e5c9ba565c8b26984bbfced3b9958b08" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/packages/amlogic/LibPlayer" path="multimedia/libplayer/src" revision="c04299a8b6876fe84baeab34704fbe7dbc42762a" upstream="buildroot-openlinux"/>
   <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" revision="910a91fdffba3d9e0ff30987ccf91ea2b4544ae8" upstream="buildroot-openlinux"/>
   <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" revision="972c7162781947f8aa3fbebd27db888bd8429119" upstream="buildroot-openlinux"/>
   <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" revision="0bf3bc2500c1e5141bf3cd97789e2c57f51cc631" upstream="buildroot-openlinux"/>
