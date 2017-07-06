@@ -23,7 +23,7 @@
   <project name="buildroot/platform/hardware/amlogic/thermal" path="hardware/aml-3.14/amlogic/thermal" revision="e3cf13d1096d3c2981be409d2a34a011fc8a404c" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/platform/hardware/amlogic/touch" path="hardware/aml-3.14/amlogic/touch" revision="f432bdc3c2f4804f97dbfa77b7e92fcec6133880" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-4.9/amlogic/wifi" revision="bb6ad624f7ef01cf365648de05e9afa06214a830" upstream="buildroot-openlinux-4.9"/>
-  <project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.14/amlogic/wifi" revision="bb6ad624f7ef01cf365648de05e9afa06214a830" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.14/amlogic/wifi" revision="2e9949d3ae25184c808145c4d183ce745ed7fea6" upstream="buildroot-openlinux-3.14-20170630"/>
   <project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.10/amlogic/wifi" revision="385a7aee2631d802db79f45918f1e033b4e1d352" upstream="buildroot-openlinux-3.10"/>
   <project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-4.9/arm/gpu" revision="dc26a9d2e63c645537abc7a0df8b940a75a0930c" upstream="buildroot-openlinux-4.9"/>
   <project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-3.14/arm/gpu" revision="dc26a9d2e63c645537abc7a0df8b940a75a0930c" upstream="buildroot-openlinux-3.14"/>
