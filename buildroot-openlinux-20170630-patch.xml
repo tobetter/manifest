@@ -10,7 +10,7 @@
   <project name="buildroot/linux/amlogic/chromium" path="vendor/amlogic/chromium" revision="59d8c38e4923d1d768e5e398eac56e2d0b0ef938" upstream="buildroot-openlinux-20170630"/>
   <project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools" revision="31fa6b7cc5cb4dd3acba37872aa6ec24a2f36ca9" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" revision="8c65191d4585a66f3b193e3761996077199bb22e" upstream="buildroot-openlinux"/>
-  <project name="buildroot/linux/buildroot" path="buildroot" revision="5e9596e7b60a7c84351ba968b3ff266a8819865c" upstream="buildroot-openlinux-20170630">
+  <project name="buildroot/linux/buildroot" path="buildroot" revision="f813b1257b929778a4e3558464e8eae454e98cf9" upstream="buildroot-openlinux-20170630">
     <copyfile dest="Makefile" src="build/Makefile"/>
   </project>
   <project name="buildroot/linux/multimedia" path="multimedia" revision="4148a53918746a9b863c00f297d1805a4e4dd0b2" upstream="buildroot-openlinux"/>
