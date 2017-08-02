@@ -6,6 +6,7 @@
 	<project name="buildroot/kernel/common" path="kernel/aml-3.14" revision="buildroot-openlinux-3.14"/>
 	<project name="buildroot/kernel/common" path="kernel/aml-3.10" revision="buildroot-openlinux-3.10"/>
 	<project name="buildroot/linux/amlogic/chromium" path="vendor/amlogic/chromium"/>
+    <project name="buildroot/vendor/amlogic/external/platinum" path="vendor/amlogic/external/platinum"/>
 	<project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools"/>
 	<project name="buildroot/linux/amlogic/brcm-bsa" path="vendor/broadcom/brcm-bsa"/>
 	<project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" />
