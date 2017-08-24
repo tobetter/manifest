@@ -59,6 +59,7 @@
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-3.10/wifi/realtek/drivers/8723bs" revision="5c4bc71f932f05adfaa61e488ac0d6661ff9a913" upstream="buildroot-openlinux-3.10"/>
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bu" path="hardware/aml-3.14/wifi/realtek/drivers/8723bu" revision="c7dbc3203819943380b04e9ffcdec09028887e22" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bu" path="hardware/aml-3.10/wifi/realtek/drivers/8723bu" revision="c7dbc3203819943380b04e9ffcdec09028887e22" upstream="buildroot-openlinux-3.10"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8723ds" path="hardware/aml-4.9/wifi/realtek/drivers/8723ds" revision="dc8d49f2f33ca9b8521e2624181849d012f8599c" upstream="buildroot-openlinux-4.9"/>
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8811au" path="hardware/aml-3.14/wifi/realtek/drivers/8811au" revision="65c3d491ff67c6320576f87d7be895f7547a5e57" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8811au" path="hardware/aml-3.10/wifi/realtek/drivers/8811au" revision="65c3d491ff67c6320576f87d7be895f7547a5e57" upstream="buildroot-openlinux-3.10"/>
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8812au" path="hardware/aml-3.14/wifi/realtek/drivers/8812au" revision="73b542a399b041c562a114c3294a65c7aa90b7a2" upstream="buildroot-openlinux-3.14"/>
@@ -77,5 +78,6 @@
   <project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf-4.9-2014.05_linux" path="toolchain/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf-4.9" revision="c95a4ecf59622c87daa4b812e278e294ea2f562f" upstream="buildroot-openlinux"/>
   <project name="buildroot/uboot" path="bootloader/uboot" revision="e83c20017570ae1722776a607134ed5f91999e0f" upstream="buildroot-openlinux-3.10"/>
   <project name="buildroot/uboot" path="bootloader/uboot-2015-dev" revision="5dd8b3ed30e3fed3edece57d61bfa2cd0d483c85" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/vendor/amlogic/dvb" path="vendor/amlogic/dvb" revision="ff868d9637f05dbb162b182dca1d07ccb2222d27" upstream="buildroot-openlinux"/>
   <project name="buildroot/vendor/amlogic/external/platinum" path="vendor/amlogic/external/platinum" revision="c7d8e32962b3dfca58d6051fb202da4b98df2854" upstream="buildroot-openlinux"/>
 </manifest>
