@@ -13,7 +13,7 @@
   <project name="buildroot/linux/amlogic/ir_tools" path="vendor/amlogic/remotecfg" revision="5c8f3eb93aa813abb86e4bdf35a4a00811b7ec82" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools" revision="47ab095d5561a509098fe57fadddc032ed034322" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" revision="8c65191d4585a66f3b193e3761996077199bb22e" upstream="buildroot-openlinux"/>
-  <project name="buildroot/linux/buildroot" path="buildroot" revision="50757ab9c82e4412957a675b48603f76c52cca6a" upstream="buildroot-openlinux-20180316">
+  <project name="buildroot/linux/buildroot" path="buildroot" revision="8fa11b2ab4e700feeef21cbfeca8734526044ac6" upstream="buildroot-openlinux-20180316">
     <copyfile dest="Makefile" src="build/Makefile"/>
   </project>
   <project name="buildroot/linux/multimedia" path="multimedia" revision="ebd4a204ebada741d301599f8e8290fbdd751949" upstream="buildroot-openlinux"/>
