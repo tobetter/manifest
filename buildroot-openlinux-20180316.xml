@@ -5,7 +5,7 @@
   <default dest-branch="buildroot-openlinux" remote="openlinux" revision="buildroot-openlinux" sync-j="4"/>
   
   <project name="buildroot/amlogic/tools/system_control" path="vendor/amlogic/system_control" revision="e1af304a85635490abd951ef00bec8085d2c0aec" upstream="buildroot-openlinux"/>
-  <project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="c774a7329137ca22916665f795cde87e1b2b889e" upstream="buildroot-openlinux-20180316"/>
+  <project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="0e387ec12a217d5b765d589d560345d996811bf4" upstream="buildroot-openlinux-20180316"/>
   <project name="buildroot/kernel/common" path="kernel/aml-3.14" revision="8ab623e44e78ff4e99f18768a847194e73ccaaf8" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/kernel/common" path="kernel/aml-3.10" revision="c714a87f0794b02cc96862d1148a69c58d37df99" upstream="buildroot-openlinux-3.10"/>
   <project name="buildroot/linux/amlogic/brcm-bsa" path="vendor/broadcom/brcm-bsa" revision="0a41e7fbedf7e0cd33e723554ff6d1dd2fdbc7a6" upstream="buildroot-openlinux"/>
@@ -19,7 +19,7 @@
   <project name="buildroot/linux/multimedia" path="multimedia" revision="ebd4a204ebada741d301599f8e8290fbdd751949" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins" revision="c7c176679e498ad8493d9d8c6653b63fa36d7238" upstream="buildroot-openlinuxgst0"/>
   <project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins1" revision="4b52348e04a9024d33a716e376369db9783be5d9" upstream="buildroot-openlinux-20180316"/>
-  <project name="buildroot/platform/hardware/amlogic/media_modules" path="hardware/aml-4.9/amlogic/media_modules" revision="050dbd02704bf4a90033fdb89c0ca5f16d4182ac" upstream="buildroot-openlinux-20180316"/>
+  <project name="buildroot/platform/hardware/amlogic/media_modules" path="hardware/aml-4.9/amlogic/media_modules" revision="5081f2d5e98ba0bd42eb7ba478a4d3c9d72b68ce" upstream="buildroot-openlinux-20180316"/>
   <project name="buildroot/platform/hardware/amlogic/nand" path="hardware/aml-3.14/amlogic/nand" revision="4305d9538be154fd27ca025f7ec5c5363a4e793e" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/platform/hardware/amlogic/nand" path="hardware/aml-3.10/amlogic/nand" revision="4305d9538be154fd27ca025f7ec5c5363a4e793e" upstream="buildroot-openlinux-3.10"/>
   <project name="buildroot/platform/hardware/amlogic/pmu" path="hardware/aml-3.14/amlogic/pmu" revision="97738d04cd4155f62a2a3a794a24c8a23a745d6e" upstream="buildroot-openlinux-3.14"/>
