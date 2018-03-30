@@ -9,14 +9,22 @@
 	<project name="buildroot/vendor/amlogic/external/platinum" path="vendor/amlogic/external/platinum"/>
 	<project name="buildroot/vendor/amlogic/dvb" path="vendor/amlogic/dvb"/>
 	<project name="buildroot/amlogic/tools/system_control" path="vendor/amlogic/system_control"/>
+	<project name="buildroot/linux/amlogic/meson_mali" path="vendor/amlogic/meson_mali"/>
+	<project name="buildroot/linux/amlogic/minigbm" path="vendor/amlogic/minigbm"/>
+	<project name="buildroot/linux/amlogic/libdrm_amlogic" path="vendor/amlogic/libdrm_amlogic"/>
+	<project name="buildroot/linux/amlogic/companion_apps" path="vendor/amlogic/companion_apps"/>
+	<project name="buildroot/vendor/amlogic/ledring" path="vendor/amlogic/ledring"/>
 	<project name="buildroot/linux/amlogic/ir_tools" path="vendor/amlogic/remotecfg" revision="buildroot-openlinux"/>
 	<project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools"/>
 	<project name="buildroot/linux/amlogic/brcm-bsa" path="vendor/broadcom/brcm-bsa"/>
+	<project name="buildroot/vendor/marvell/bt/sd8977" path="vendor/marvell/bt/sd8977" />
+	<project name="buildroot/vendor/marvell/bt/sd8987" path="vendor/marvell/bt/sd8987" />
 	<project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" />
 	<project name="buildroot/linux/buildroot" path="buildroot">
 		<copyfile dest="Makefile" src="build/Makefile"/>
 	</project>
 	<project name="buildroot/linux/multimedia" path="multimedia" />
+	<project name="buildroot/avs/avs_client" path="multimedia/avs" />
 	<project name="buildroot/platform/packages/amlogic/LibPlayer" path="multimedia/libplayer/src" />
 	<project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins" revision="buildroot-openlinuxgst0"/>
 	<project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins1" revision="buildroot-openlinuxgst1"/>
@@ -30,6 +38,8 @@
 	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf" />
 	<project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" />
 	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf" />
+	<project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" />
+	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" />
 
 	<project name="buildroot/platform/hardware/amlogic/media_modules" path="hardware/aml-4.9/amlogic/media_modules" revision="buildroot-openlinux-4.9"/>
 	<project name="buildroot/platform/hardware/amlogic/nand" path="hardware/aml-3.14/amlogic/nand" revision="buildroot-openlinux-3.14"/>
@@ -48,6 +58,11 @@
 	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/aml-4.9/wifi/realtek/drivers/8189ftv" revision="buildroot-openlinux-4.9"/>
 	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-4.9/wifi/realtek/drivers/8822bu" revision="buildroot-openlinux-4.9"/>
 	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723ds" path="hardware/aml-4.9/wifi/realtek/drivers/8723ds" revision="buildroot-openlinux-4.9"/>
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-4.9/wifi/realtek/drivers/8723bs" revision="buildroot-openlinux-4.9" />
+	<project name="buildroot/platform/hardware/realtek/bluetooth" path="hardware/aml-4.9/realtek/bluetooth" revision="buildroot-openlinux-4.9" />
+	<project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8977" path="hardware/aml-4.9/wifi/marvell/drivers/sd8977" revision="buildroot-openlinux-4.9" />
+	<project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8987" path="hardware/aml-4.9/wifi/marvell/drivers/sd8987" revision="buildroot-openlinux-4.9" />
+	<project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-4.9/wifi/qualcomm/drivers/qca9377" revision="buildroot-openlinux-4.9" />
 
 	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.14/amlogic/wifi" revision="buildroot-openlinux-3.14"/>
 	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-3.14/wifi/realtek/drivers/8188eu" revision="buildroot-openlinux-3.14"/>
@@ -86,4 +101,15 @@
 
 	<project name="buildroot/uboot" path="bootloader/uboot" revision="buildroot-openlinux-3.10"/>
 	<project name="buildroot/uboot" path="bootloader/uboot-2015-dev" revision="buildroot-openlinux-3.14"/>
+
+	<!-- add projects -->
+	<project name="buildroot/firmware/bin/bl2" path="bootloader/uboot-repo/bl2/bin" revision="buildroot-openlinux" />
+	<project name="buildroot/firmware/bin/bl30" path="bootloader/uboot-repo/bl30/bin" revision="buildroot-openlinux" />
+	<project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31/bin" revision="buildroot-openlinux" />
+	<project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31_1.3/bin" revision="buildroot-openlinux-1.3" />
+	<project name="buildroot/firmware/bin/bl32" path="bootloader/uboot-repo/bl32/bin" revision="buildroot-openlinux" />
+	<project name="buildroot/uboot" path="bootloader/uboot-repo/bl33" revision="buildroot-openlinux-4.9" />
+	<project name="buildroot/amlogic/tools/fip" path="bootloader/uboot-repo/fip" revision="buildroot-openlinux">
+	    <copyfile src="mk" dest="bootloader/uboot-repo/mk"/>
+	</project>
 </manifest>
