@@ -33,7 +33,7 @@
   <project name="buildroot/linux/multimedia" path="multimedia" revision="ebd4a204ebada741d301599f8e8290fbdd751949" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins" revision="c7c176679e498ad8493d9d8c6653b63fa36d7238" upstream="buildroot-openlinuxgst0"/>
   <project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins1" revision="2259a9a28e25135119abeb610b89ebb5f58f9d45" upstream="buildroot-openlinuxgst1"/>
-  <project name="buildroot/platform/hardware/amlogic/media_modules" path="hardware/aml-4.9/amlogic/media_modules" revision="964d693f041d480b7cbc9e1c98b93f0f9d343258" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/amlogic/media_modules" path="hardware/aml-4.9/amlogic/media_modules" revision="ec8b2e016bb146f4781b7dd1876f757dfdc74a50" upstream="buildroot-openlinux-20180330"/>
   <project name="buildroot/platform/hardware/amlogic/nand" path="hardware/aml-3.14/amlogic/nand" revision="4305d9538be154fd27ca025f7ec5c5363a4e793e" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/platform/hardware/amlogic/pmu" path="hardware/aml-3.14/amlogic/pmu" revision="97738d04cd4155f62a2a3a794a24c8a23a745d6e" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/platform/hardware/amlogic/thermal" path="hardware/aml-3.14/amlogic/thermal" revision="cdeae3e8b6e70fed6ecf365b48a4cf899436a377" upstream="buildroot-openlinux-3.14"/>
@@ -73,7 +73,7 @@
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8812au" path="hardware/aml-3.14/wifi/realtek/drivers/8812au" revision="73b542a399b041c562a114c3294a65c7aa90b7a2" upstream="buildroot-openlinux-3.14"/>
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-4.9/wifi/realtek/drivers/8822bu" revision="1963534ed297e22a1effa9f122bfe859904886ca" upstream="buildroot-openlinux-4.9"/>
   <project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-3.14/wifi/realtek/drivers/8822bu" revision="1963534ed297e22a1effa9f122bfe859904886ca" upstream="buildroot-openlinux-3.14"/>
-  <project name="buildroot/platform/packages/amlogic/LibPlayer" path="multimedia/libplayer/src" revision="c53d881abe8b3ce61d632ca013cf375a518ec5bf" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/packages/amlogic/LibPlayer" path="multimedia/libplayer/src" revision="130b056bdd50854fd93f8ff46939f9f5c6404b54" upstream="buildroot-openlinux-20180330"/>
   <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" revision="910a91fdffba3d9e0ff30987ccf91ea2b4544ae8" upstream="buildroot-openlinux"/>
   <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" revision="972c7162781947f8aa3fbebd27db888bd8429119" upstream="buildroot-openlinux"/>
   <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" revision="0bf3bc2500c1e5141bf3cd97789e2c57f51cc631" upstream="buildroot-openlinux"/>
