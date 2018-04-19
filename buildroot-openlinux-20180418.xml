@@ -9,7 +9,7 @@
   </project>
   <project name="buildroot/amlogic/tools/system_control" path="vendor/amlogic/system_control" revision="82f8869657c0032f908226eed3f38bbd991a46aa" upstream="buildroot-openlinux"/>
   <project name="buildroot/avs/avs_client" path="multimedia/avs" revision="d18af329c8aea471b36da0aa0c14ff865ef0d1a5" upstream="buildroot-openlinux"/>
-  <project name="buildroot/firmware/bin/bl2" path="bootloader/uboot-repo/bl2/bin" revision="6a4c617599c74d500f909864bcbaf56363102760" upstream="buildroot-openlinux"/>
+  <project name="buildroot/firmware/bin/bl2" path="bootloader/uboot-repo/bl2/bin" revision="404d0500eab953d8c3616134e0a1897117b36101" upstream="buildroot-openlinux"/>
   <project name="buildroot/firmware/bin/bl30" path="bootloader/uboot-repo/bl30/bin" revision="ffac416236f1cfa5b8580f4cad0751f742133a49" upstream="buildroot-openlinux"/>
   <project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31/bin" revision="bb8e52ec48c03452862f9a6775f97eeb96e0a3b0" upstream="buildroot-openlinux"/>
   <project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31_1.3/bin" revision="a84d4112e166f19951de062a05e84a06e06adcde" upstream="buildroot-openlinux-1.3"/>
