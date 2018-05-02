@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="../../" name="openlinux"/>
+  
+  <default dest-branch="buildroot-openlinux" remote="openlinux" revision="buildroot-openlinux" sync-j="4"/>
+  
+  <project name="buildroot/amlogic/tools/fip" path="bootloader/uboot-repo/fip" revision="0aab2b44494426233efc1fbfda9e37e20bc455ac" upstream="buildroot-openlinux">
+    <copyfile dest="bootloader/uboot-repo/mk" src="mk"/>
+  </project>
+  <project name="buildroot/amlogic/tools/system_control" path="vendor/amlogic/system_control" revision="82f8869657c0032f908226eed3f38bbd991a46aa" upstream="buildroot-openlinux"/>
+  <project name="buildroot/avs/avs_client" path="multimedia/avs" revision="d18af329c8aea471b36da0aa0c14ff865ef0d1a5" upstream="buildroot-openlinux"/>
+  <project name="buildroot/firmware/bin/bl2" path="bootloader/uboot-repo/bl2/bin" revision="404d0500eab953d8c3616134e0a1897117b36101" upstream="buildroot-openlinux"/>
+  <project name="buildroot/firmware/bin/bl30" path="bootloader/uboot-repo/bl30/bin" revision="ffac416236f1cfa5b8580f4cad0751f742133a49" upstream="buildroot-openlinux"/>
+  <project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31/bin" revision="bb8e52ec48c03452862f9a6775f97eeb96e0a3b0" upstream="buildroot-openlinux"/>
+  <project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31_1.3/bin" revision="a84d4112e166f19951de062a05e84a06e06adcde" upstream="buildroot-openlinux-1.3"/>
+  <project name="buildroot/firmware/bin/bl32" path="bootloader/uboot-repo/bl32/bin" revision="a17992530ab9d5b11331907fe5d649aacd58435b" upstream="buildroot-openlinux"/>
+  <project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="00332014545fc995a5aed0f90ac0154093678024" upstream="buildroot-openlinux-20180502"/>
+  <project name="buildroot/linux/amlogic/brcm-bsa" path="vendor/broadcom/brcm-bsa" revision="692dba7dbb8eeb1c0029743cdca30ff5a5a5d1ae" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/amlogic/chromium" path="vendor/amlogic/chromium" revision="b668fc3e74e32fa11d0d2a09b8d57cb536de48a0" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/amlogic/companion_apps" path="vendor/amlogic/companion_apps" revision="f03befc9241b30cc145f0a6ae8fcf922f0eef895" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/amlogic/ir_tools" path="vendor/amlogic/remotecfg" revision="5c8f3eb93aa813abb86e4bdf35a4a00811b7ec82" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/amlogic/libdrm_amlogic" path="vendor/amlogic/libdrm_amlogic" revision="22dc0a50554509911782a94cd6de775b3544e144" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/amlogic/meson_mali" path="vendor/amlogic/meson_mali" revision="41639dc55a4312968c0ed692edeebc4312489b6f" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/amlogic/minigbm" path="vendor/amlogic/minigbm" revision="bacd5702761afac2be9f5745957e479dc0984b2d" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools" revision="47ab095d5561a509098fe57fadddc032ed034322" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" revision="8c65191d4585a66f3b193e3761996077199bb22e" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/buildroot" path="buildroot" revision="df72c8face2a5510c3394075fdae4d2f11c4da12" upstream="buildroot-openlinux-20180418">
+    <copyfile dest="Makefile" src="build/Makefile"/>
+    <copyfile dest="runCompile.sh" src="build/runCompile.sh"/>
+  </project>
+  <project name="buildroot/linux/multimedia" path="multimedia" revision="ebd4a204ebada741d301599f8e8290fbdd751949" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins" revision="c7c176679e498ad8493d9d8c6653b63fa36d7238" upstream="buildroot-openlinuxgst0"/>
+  <project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins1" revision="2259a9a28e25135119abeb610b89ebb5f58f9d45" upstream="buildroot-openlinuxgst1"/>
+  <project name="buildroot/platform/hardware/amlogic/media_modules" path="hardware/aml-4.9/amlogic/media_modules" revision="2d380e529aa72a00e1c6166ce1a2afb16a151e3f" upstream="buildroot-openlinux-20180418"/>
+  <project name="buildroot/platform/hardware/amlogic/nand" path="hardware/aml-3.14/amlogic/nand" revision="4305d9538be154fd27ca025f7ec5c5363a4e793e" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/amlogic/pmu" path="hardware/aml-3.14/amlogic/pmu" revision="97738d04cd4155f62a2a3a794a24c8a23a745d6e" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/amlogic/thermal" path="hardware/aml-3.14/amlogic/thermal" revision="cdeae3e8b6e70fed6ecf365b48a4cf899436a377" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/amlogic/touch" path="hardware/aml-3.14/amlogic/touch" revision="f432bdc3c2f4804f97dbfa77b7e92fcec6133880" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-4.9/amlogic/wifi" revision="b576357eb2b2dfc4c03d72667887ac25ce88734f" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.14/amlogic/wifi" revision="b576357eb2b2dfc4c03d72667887ac25ce88734f" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-4.9/arm/gpu" revision="50000bb214f29235f5466b687e2127c5cfc27415" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-3.14/arm/gpu" revision="50000bb214f29235f5466b687e2127c5cfc27415" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/realtek/bluetooth" path="hardware/aml-4.9/realtek/bluetooth" revision="da749e74a69f9a99ac649336455f03f10b0516ef" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/aml-4.9/wifi/broadcom/drivers/ap6xxx" revision="47cb572c30bd9d1a254f5ad7e3d956501fd18814" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/aml-3.14/wifi/broadcom/drivers/ap6xxx" revision="47cb572c30bd9d1a254f5ad7e3d956501fd18814" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/broadcom/drivers/bcm242_bcm569" path="hardware/aml-3.10/wifi/broadcom/drivers/bcm242_bcm569" revision="8786d6e93b387c4f87c914128bc72458bfb5e634" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/hardware/wifi/broadcom/drivers/usi" path="hardware/aml-3.14/wifi/broadcom/drivers/usi" revision="583b48637f6abfe13074075d7af734cfe0e4f185" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8977" path="hardware/aml-4.9/wifi/marvell/drivers/sd8977" revision="afda6d65bea5bf4bf0b968308e2d04b614480af6" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8987" path="hardware/aml-4.9/wifi/marvell/drivers/sd8987" revision="dc06cecafa738916cfda5a507b2c0e720900401b" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7601" path="hardware/aml-3.14/wifi/mtk/drivers/mt7601" revision="8228a8979ae7782a02cc1d3828e76c9b2fabea73" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7603" path="hardware/aml-3.14/wifi/mtk/drivers/mt7603" revision="763bf6357eafba02fca28e127f4eee773227fd7a" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-4.9/wifi/qualcomm/drivers/qca9377" revision="117c5511b5a4ee09c258a918549da48f0b458769" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-3.14/wifi/qualcomm/drivers/qca9377" revision="f465fdc0a089c68e76c8367c23f4b024948fd5ed" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-4.9/wifi/realtek/drivers/8188eu" revision="2d358c57ead2bf20d4674a22bff9fabeca8907f5" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-3.14/wifi/realtek/drivers/8188eu" revision="2d358c57ead2bf20d4674a22bff9fabeca8907f5" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8188ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8188ftv" revision="0c20acb18001f9e9b382885eddfc1ea2332123a8" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/aml-4.9/wifi/realtek/drivers/8189es" revision="f971e4bcbfb5a6109fe2e65dab375f5c63712093" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/aml-3.14/wifi/realtek/drivers/8189es" revision="f971e4bcbfb5a6109fe2e65dab375f5c63712093" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/aml-4.9/wifi/realtek/drivers/8189ftv" revision="cc79735f1fbbada15f945e636cba98b1982675c5" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8189ftv" revision="cc79735f1fbbada15f945e636cba98b1982675c5" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8192cu" path="hardware/aml-3.14/wifi/realtek/drivers/8192cu" revision="4f9ce1fbafd98e0e635cd9a65b855154796bd8c9" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8192du" path="hardware/aml-3.14/wifi/realtek/drivers/8192du" revision="f685202d762eaa8824cfba829d26dc1632f12e5b" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8192es" path="hardware/aml-3.14/wifi/realtek/drivers/8192es" revision="f1befdfccf45233c7d310c02a954ad04c18be8dd" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8192eu" path="hardware/aml-3.14/wifi/realtek/drivers/8192eu" revision="088ca63911cc3154b375b5c351488b46befa8d6f" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8723au" path="hardware/aml-3.14/wifi/realtek/drivers/8723au" revision="7e3ec155dfa552d57418bc1dadbb1d9ac80afc1d" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-4.9/wifi/realtek/drivers/8723bs" revision="ee9d86a7946ac299fcaa6abab7bccaa34fba1609" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-3.14/wifi/realtek/drivers/8723bs" revision="c3eef6c8f95b80a9d8c92537c2f9e5f3bfb393ee" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bu" path="hardware/aml-3.14/wifi/realtek/drivers/8723bu" revision="e03e6457721f6d7175d50bf29c4c12ff44e83ef9" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8723ds" path="hardware/aml-4.9/wifi/realtek/drivers/8723ds" revision="b027b2ecef834d110d288bfab86ffe2bb23c27dc" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8811au" path="hardware/aml-3.14/wifi/realtek/drivers/8811au" revision="65c3d491ff67c6320576f87d7be895f7547a5e57" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8812au" path="hardware/aml-3.14/wifi/realtek/drivers/8812au" revision="73b542a399b041c562a114c3294a65c7aa90b7a2" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-4.9/wifi/realtek/drivers/8822bu" revision="1963534ed297e22a1effa9f122bfe859904886ca" upstream="buildroot-openlinux-4.9"/>
+  <project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-3.14/wifi/realtek/drivers/8822bu" revision="1963534ed297e22a1effa9f122bfe859904886ca" upstream="buildroot-openlinux-3.14"/>
+  <project name="buildroot/platform/packages/amlogic/LibPlayer" path="multimedia/libplayer/src" revision="26e2ced6e3875d461ea93f5fc7d5580b1be92a79" upstream="buildroot-openlinux-20180418"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" revision="910a91fdffba3d9e0ff30987ccf91ea2b4544ae8" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" revision="972c7162781947f8aa3fbebd27db888bd8429119" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" revision="0bf3bc2500c1e5141bf3cd97789e2c57f51cc631" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="da1e5832240aa5e9a5a6d65201f66e8faec2ef45" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu-4.9" revision="7c3e394f70c9b2161d561c386572f1d6be21259f" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/arc/arc-4.8.5" path="toolchain/gcc/linux-x86/arc/arc-4.8.5" revision="b346ef6656e43de5cff227b2271b67a13c8e12dc" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/Sourcery_G++_Lite-2010q1" path="toolchain/gcc/linux-x86/arm/Sourcery_G++_Lite-2010q1" revision="1bccaf02cd248c8d4c9c644caba1e9bc9fb6e98e" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf" revision="b992d5a7a2f96946dff97d8c1431e2727f52199e" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf" revision="32a934c7f728290fd4f08bf415d0cd451aaf4724" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" revision="f106160477d39f60b5d8acbdcc84f531582d7050" upstream="buildroot-openlinux"/>
+  <project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf-4.9-2014.05_linux" path="toolchain/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf-4.9" revision="c95a4ecf59622c87daa4b812e278e294ea2f562f" upstream="buildroot-openlinux"/>
+  <project name="buildroot/uboot" path="bootloader/uboot-repo/bl33" revision="5a63778feeab46b31fa4a9fa96834cd424dcfc71" upstream="buildroot-openlinux-20180418"/>
+  <project name="buildroot/vendor/amlogic/dvb" path="vendor/amlogic/dvb" revision="41aad05617439d463c81882f196b7779c961bf73" upstream="buildroot-openlinux"/>
+  <project name="buildroot/vendor/amlogic/external/platinum" path="vendor/amlogic/external/platinum" revision="f80d14969827c2d3941e0fe5e070e065ed29e75e" upstream="buildroot-openlinux"/>
+  <project name="buildroot/vendor/amlogic/ledring" path="vendor/amlogic/ledring" revision="8961d16a1856995977f4708e9ef10173aa1fe29d" upstream="buildroot-openlinux"/>
+  <project name="buildroot/vendor/marvell/bt/sd8977" path="vendor/marvell/bt/sd8977" revision="95114ff9a6b2aa8ccdf2ab6a21387b93c14f976c" upstream="buildroot-openlinux"/>
+  <project name="buildroot/vendor/marvell/bt/sd8987" path="vendor/marvell/bt/sd8987" revision="bb3288bdf68ba79dc695b62ddcee87571600a40e" upstream="buildroot-openlinux"/>
+</manifest>
