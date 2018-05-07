@@ -14,7 +14,7 @@
   <project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31/bin" revision="bb8e52ec48c03452862f9a6775f97eeb96e0a3b0" upstream="buildroot-openlinux"/>
   <project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31_1.3/bin" revision="a84d4112e166f19951de062a05e84a06e06adcde" upstream="buildroot-openlinux-1.3"/>
   <project name="buildroot/firmware/bin/bl32" path="bootloader/uboot-repo/bl32/bin" revision="a17992530ab9d5b11331907fe5d649aacd58435b" upstream="buildroot-openlinux"/>
-  <project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="00332014545fc995a5aed0f90ac0154093678024" upstream="buildroot-openlinux-20180502"/>
+  <project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="8485b83a2cc523c03f6be323a300e00011ddaa21" upstream="buildroot-openlinux-20180502"/>
   <project name="buildroot/linux/amlogic/brcm-bsa" path="vendor/broadcom/brcm-bsa" revision="692dba7dbb8eeb1c0029743cdca30ff5a5a5d1ae" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/chromium" path="vendor/amlogic/chromium" revision="b668fc3e74e32fa11d0d2a09b8d57cb536de48a0" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/companion_apps" path="vendor/amlogic/companion_apps" revision="f03befc9241b30cc145f0a6ae8fcf922f0eef895" upstream="buildroot-openlinux"/>
