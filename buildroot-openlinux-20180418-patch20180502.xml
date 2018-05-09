@@ -20,11 +20,11 @@
   <project name="buildroot/linux/amlogic/companion_apps" path="vendor/amlogic/companion_apps" revision="f03befc9241b30cc145f0a6ae8fcf922f0eef895" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/ir_tools" path="vendor/amlogic/remotecfg" revision="5c8f3eb93aa813abb86e4bdf35a4a00811b7ec82" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/libdrm_amlogic" path="vendor/amlogic/libdrm_amlogic" revision="22dc0a50554509911782a94cd6de775b3544e144" upstream="buildroot-openlinux"/>
-  <project name="buildroot/linux/amlogic/meson_mali" path="vendor/amlogic/meson_mali" revision="41639dc55a4312968c0ed692edeebc4312489b6f" upstream="buildroot-openlinux"/>
+  <project name="buildroot/linux/amlogic/meson_mali" path="vendor/amlogic/meson_mali" revision="3df5cd6cec292913c81c01860c927766026cfb43" upstream="buildroot-openlinux-20180502"/>
   <project name="buildroot/linux/amlogic/minigbm" path="vendor/amlogic/minigbm" revision="bacd5702761afac2be9f5745957e479dc0984b2d" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools" revision="47ab095d5561a509098fe57fadddc032ed034322" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" revision="8c65191d4585a66f3b193e3761996077199bb22e" upstream="buildroot-openlinux"/>
-  <project name="buildroot/linux/buildroot" path="buildroot" revision="df72c8face2a5510c3394075fdae4d2f11c4da12" upstream="buildroot-openlinux-20180418">
+  <project name="buildroot/linux/buildroot" path="buildroot" revision="e1ff624372b8606b965830d87a37e66b2c51e6ef" upstream="buildroot-openlinux-20180502">
     <copyfile dest="Makefile" src="build/Makefile"/>
     <copyfile dest="runCompile.sh" src="build/runCompile.sh"/>
   </project>
