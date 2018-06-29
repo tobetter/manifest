@@ -24,7 +24,7 @@
   <project name="buildroot/linux/amlogic/minigbm" path="vendor/amlogic/minigbm" revision="bacd5702761afac2be9f5745957e479dc0984b2d" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools" revision="47ab095d5561a509098fe57fadddc032ed034322" upstream="buildroot-openlinux"/>
   <project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" revision="8c65191d4585a66f3b193e3761996077199bb22e" upstream="buildroot-openlinux"/>
-  <project name="buildroot/linux/buildroot" path="buildroot" revision="c838d3018ab9c0a7124368a6507073df2b797343" upstream="buildroot-openlinux-20180502">
+  <project name="buildroot/linux/buildroot" path="buildroot" revision="9518a4affa591480c155f8d0763009bceab19e60" upstream="buildroot-openlinux-20180502">
     <copyfile dest="Makefile" src="build/Makefile"/>
     <copyfile dest="runCompile.sh" src="build/runCompile.sh"/>
   </project>
