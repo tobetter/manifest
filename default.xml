@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="openlinux" fetch="../../"/>
-	<default dest-branch="buildroot-openlinux" revision="buildroot-openlinux" remote="openlinux" sync-j="4"/>
-	<project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/kernel/common" path="kernel/aml-3.14" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/kernel/common" path="kernel/aml-3.10" revision="buildroot-openlinux-3.10"/>
+	<remote name="origin" fetch="../.."/>
+	<default revision="s922_buildroot_master" remote="origin" sync-j="4"/>
+
+	<project name="buildroot/kernel/common" path="kernel/aml-4.9"/>
 	<project name="buildroot/linux/amlogic/chromium" path="vendor/amlogic/chromium"/>
 	<project name="buildroot/vendor/amlogic/external/platinum" path="vendor/amlogic/external/platinum"/>
 	<project name="buildroot/vendor/amlogic/dvb" path="vendor/amlogic/dvb"/>
@@ -14,7 +13,7 @@
 	<project name="buildroot/linux/amlogic/libdrm_amlogic" path="vendor/amlogic/libdrm_amlogic"/>
 	<project name="buildroot/linux/amlogic/companion_apps" path="vendor/amlogic/companion_apps"/>
 	<project name="buildroot/vendor/amlogic/ledring" path="vendor/amlogic/ledring"/>
-	<project name="buildroot/linux/amlogic/ir_tools" path="vendor/amlogic/remotecfg" revision="buildroot-openlinux"/>
+	<project name="buildroot/linux/amlogic/ir_tools" path="vendor/amlogic/remotecfg" />
 	<project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools"/>
 	<project name="buildroot/linux/amlogic/brcm-bsa" path="vendor/broadcom/brcm-bsa"/>
 	<project name="buildroot/vendor/marvell/bt/sd8977" path="vendor/marvell/bt/sd8977" />
@@ -41,75 +40,56 @@
 	<project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" />
 	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" />
 
-	<project name="buildroot/platform/hardware/amlogic/media_modules" path="hardware/aml-4.9/amlogic/media_modules" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/platform/hardware/amlogic/nand" path="hardware/aml-3.14/amlogic/nand" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/amlogic/nand" path="hardware/aml-3.10/amlogic/nand" revision="buildroot-openlinux-3.10"/>
-    <project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-4.9/arm/gpu" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-3.14/arm/gpu" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-3.10/arm/gpu" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/amlogic/pmu" path="hardware/aml-3.14/amlogic/pmu" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/amlogic/thermal" path="hardware/aml-3.14/amlogic/thermal" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/amlogic/touch" path="hardware/aml-3.14/amlogic/touch" revision="buildroot-openlinux-3.14"/>
+	<project name="buildroot/platform/hardware/amlogic/media_modules" path="hardware/aml-4.9/amlogic/media_modules" />
+	<project name="buildroot/platform/hardware/amlogic/nand" path="hardware/aml-3.14/amlogic/nand" />
+	<project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-4.9/arm/gpu" revision="7ee9d980b03d696e08a6788a8775f4853d0b64fc" />
+	<project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-3.14/arm/gpu" revision="7ee9d980b03d696e08a6788a8775f4853d0b64fc" />
+	<project name="buildroot/platform/hardware/amlogic/pmu" path="hardware/aml-3.14/amlogic/pmu" />
+	<project name="buildroot/platform/hardware/amlogic/thermal" path="hardware/aml-3.14/amlogic/thermal" />
+	<project name="buildroot/platform/hardware/amlogic/touch" path="hardware/aml-3.14/amlogic/touch" />
 
-	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-4.9/amlogic/wifi" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/aml-4.9/wifi/broadcom/drivers/ap6xxx" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-4.9/wifi/realtek/drivers/8188eu" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/aml-4.9/wifi/realtek/drivers/8189es" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/aml-4.9/wifi/realtek/drivers/8189ftv" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-4.9/wifi/realtek/drivers/8822bu" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723ds" path="hardware/aml-4.9/wifi/realtek/drivers/8723ds" revision="buildroot-openlinux-4.9"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-4.9/wifi/realtek/drivers/8723bs" revision="buildroot-openlinux-4.9" />
-	<project name="buildroot/platform/hardware/realtek/bluetooth" path="hardware/aml-4.9/realtek/bluetooth" revision="buildroot-openlinux-4.9" />
-	<project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8977" path="hardware/aml-4.9/wifi/marvell/drivers/sd8977" revision="buildroot-openlinux-4.9" />
-	<project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8987" path="hardware/aml-4.9/wifi/marvell/drivers/sd8987" revision="buildroot-openlinux-4.9" />
-	<project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-4.9/wifi/qualcomm/drivers/qca9377" revision="buildroot-openlinux-4.9" />
+	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-4.9/amlogic/wifi" />
+	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/aml-4.9/wifi/broadcom/drivers/ap6xxx" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-4.9/wifi/realtek/drivers/8188eu" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/aml-4.9/wifi/realtek/drivers/8189es" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/aml-4.9/wifi/realtek/drivers/8189ftv" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-4.9/wifi/realtek/drivers/8822bu" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723ds" path="hardware/aml-4.9/wifi/realtek/drivers/8723ds" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-4.9/wifi/realtek/drivers/8723bs" revision="ee9d86a7946ac299fcaa6abab7bccaa34fba1609" />
+	<project name="buildroot/platform/hardware/realtek/bluetooth" path="hardware/aml-4.9/realtek/bluetooth" />
+	<project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8977" path="hardware/aml-4.9/wifi/marvell/drivers/sd8977" />
+	<project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8987" path="hardware/aml-4.9/wifi/marvell/drivers/sd8987" />
+	<project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-4.9/wifi/qualcomm/drivers/qca9377" revision="117c5511b5a4ee09c258a918549da48f0b458769" />
 
-	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.14/amlogic/wifi" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-3.14/wifi/realtek/drivers/8188eu" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7601" path="hardware/aml-3.14/wifi/mtk/drivers/mt7601" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7603" path="hardware/aml-3.14/wifi/mtk/drivers/mt7603" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8188ftv" revision="buildroot-openlinux-3.14" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192cu" path="hardware/aml-3.14/wifi/realtek/drivers/8192cu" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192du" path="hardware/aml-3.14/wifi/realtek/drivers/8192du" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192eu" path="hardware/aml-3.14/wifi/realtek/drivers/8192eu" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192es" path="hardware/aml-3.14/wifi/realtek/drivers/8192es" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/aml-3.14/wifi/realtek/drivers/8189es" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8189ftv" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-3.14/wifi/realtek/drivers/8723bs" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723au" path="hardware/aml-3.14/wifi/realtek/drivers/8723au" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8811au" path="hardware/aml-3.14/wifi/realtek/drivers/8811au" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8812au" path="hardware/aml-3.14/wifi/realtek/drivers/8812au" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bu" path="hardware/aml-3.14/wifi/realtek/drivers/8723bu" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-3.14/wifi/realtek/drivers/8822bu" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/aml-3.14/wifi/broadcom/drivers/ap6xxx" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/usi" path="hardware/aml-3.14/wifi/broadcom/drivers/usi" revision="buildroot-openlinux-3.14"/>
-	<project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-3.14/wifi/qualcomm/drivers/qca9377" revision="buildroot-openlinux-3.14"/>
-
-	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.10/amlogic/wifi" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/bcm242_bcm569" path="hardware/aml-3.10/wifi/broadcom/drivers/bcm242_bcm569" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-3.10/wifi/realtek/drivers/8188eu" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192cu" path="hardware/aml-3.10/wifi/realtek/drivers/8192cu" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192du" path="hardware/aml-3.10/wifi/realtek/drivers/8192du" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192eu" path="hardware/aml-3.10/wifi/realtek/drivers/8192eu" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/aml-3.10/wifi/realtek/drivers/8189es" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-3.10/wifi/realtek/drivers/8723bs" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723au" path="hardware/aml-3.10/wifi/realtek/drivers/8723au" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8811au" path="hardware/aml-3.10/wifi/realtek/drivers/8811au" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8812au" path="hardware/aml-3.10/wifi/realtek/drivers/8812au" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bu" path="hardware/aml-3.10/wifi/realtek/drivers/8723bu" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/aml-3.10/wifi/broadcom/drivers/ap6xxx" revision="buildroot-openlinux-3.10"/>
-
-	<project name="buildroot/uboot" path="bootloader/uboot" revision="buildroot-openlinux-3.10"/>
-	<project name="buildroot/uboot" path="bootloader/uboot-2015-dev" revision="buildroot-openlinux-3.14"/>
+	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.14/amlogic/wifi" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-3.14/wifi/realtek/drivers/8188eu" />
+	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7601" path="hardware/aml-3.14/wifi/mtk/drivers/mt7601" />
+	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7603" path="hardware/aml-3.14/wifi/mtk/drivers/mt7603" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8188ftv" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192cu" path="hardware/aml-3.14/wifi/realtek/drivers/8192cu" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192du" path="hardware/aml-3.14/wifi/realtek/drivers/8192du" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192eu" path="hardware/aml-3.14/wifi/realtek/drivers/8192eu" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192es" path="hardware/aml-3.14/wifi/realtek/drivers/8192es" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/aml-3.14/wifi/realtek/drivers/8189es" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8189ftv" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-3.14/wifi/realtek/drivers/8723bs" revision="c3eef6c8f95b80a9d8c92537c2f9e5f3bfb393ee" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723au" path="hardware/aml-3.14/wifi/realtek/drivers/8723au" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8811au" path="hardware/aml-3.14/wifi/realtek/drivers/8811au" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8812au" path="hardware/aml-3.14/wifi/realtek/drivers/8812au" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bu" path="hardware/aml-3.14/wifi/realtek/drivers/8723bu" />
+	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-3.14/wifi/realtek/drivers/8822bu" />
+	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/aml-3.14/wifi/broadcom/drivers/ap6xxx" />
+	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/usi" path="hardware/aml-3.14/wifi/broadcom/drivers/usi" />
+	<project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-3.14/wifi/qualcomm/drivers/qca9377" revision="f465fdc0a089c68e76c8367c23f4b024948fd5ed" />
 
 	<!-- add projects -->
-	<project name="buildroot/firmware/bin/bl2" path="bootloader/uboot-repo/bl2/bin" revision="buildroot-openlinux" />
-	<project name="buildroot/firmware/bin/bl30" path="bootloader/uboot-repo/bl30/bin" revision="buildroot-openlinux" />
-	<project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31/bin" revision="buildroot-openlinux" />
-	<project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31_1.3/bin" revision="buildroot-openlinux-1.3" />
-	<project name="buildroot/firmware/bin/bl32" path="bootloader/uboot-repo/bl32/bin" revision="buildroot-openlinux" />
-	<project name="buildroot/uboot" path="bootloader/uboot-repo/bl33" revision="buildroot-openlinux-4.9" />
-	<project name="buildroot/amlogic/tools/fip" path="bootloader/uboot-repo/fip" revision="buildroot-openlinux">
+	<project name="buildroot/firmware/bin/bl2" path="bootloader/uboot-repo/bl2/bin" />
+	<project name="buildroot/firmware/bin/bl30" path="bootloader/uboot-repo/bl30/bin" />
+	<project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31/bin" />
+	<project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31_1.3/bin" revision="97500af38ebb7d7b8cf8eff0b692c1f8cda89aed" />
+	<project name="buildroot/firmware/bin/bl32" path="bootloader/uboot-repo/bl32/bin" />
+	<project name="buildroot/uboot" path="bootloader/uboot-repo/bl33"/>
+	<project name="buildroot/amlogic/tools/fip" path="bootloader/uboot-repo/fip" >
 	    <copyfile src="mk" dest="bootloader/uboot-repo/mk"/>
 	</project>
 </manifest>
