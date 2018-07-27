@@ -83,13 +83,5 @@
 	<project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-3.14/wifi/qualcomm/drivers/qca9377" revision="f465fdc0a089c68e76c8367c23f4b024948fd5ed" />
 
 	<!-- add projects -->
-	<project name="buildroot/firmware/bin/bl2" path="bootloader/uboot-repo/bl2/bin" />
-	<project name="buildroot/firmware/bin/bl30" path="bootloader/uboot-repo/bl30/bin" />
-	<project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31/bin" />
-	<project name="buildroot/firmware/bin/bl31" path="bootloader/uboot-repo/bl31_1.3/bin" revision="97500af38ebb7d7b8cf8eff0b692c1f8cda89aed" />
-	<project name="buildroot/firmware/bin/bl32" path="bootloader/uboot-repo/bl32/bin" />
-	<project name="buildroot/uboot" path="bootloader/uboot-repo/bl33"/>
-	<project name="buildroot/amlogic/tools/fip" path="bootloader/uboot-repo/fip" >
-	    <copyfile src="mk" dest="bootloader/uboot-repo/mk"/>
-	</project>
+	<project name="buildroot/uboot" path="bootloader/uboot" revision="refs/heads/s922_buildroot_master"/>
 </manifest>
