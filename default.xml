@@ -1,86 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote name="origin" fetch="../.."/>
-	<default revision="s922_buildroot_master" remote="origin" sync-j="4"/>
+	<default revision="refs/heads/aml64_buildroot_master" remote="origin" sync-j="4"/>
 
-	<project name="buildroot/kernel/common" path="kernel/aml-4.9"/>
-	<project name="buildroot/linux/amlogic/chromium" path="vendor/amlogic/chromium"/>
-	<project name="buildroot/vendor/amlogic/external/platinum" path="vendor/amlogic/external/platinum"/>
-	<project name="buildroot/vendor/amlogic/dvb" path="vendor/amlogic/dvb"/>
-	<project name="buildroot/amlogic/tools/system_control" path="vendor/amlogic/system_control"/>
-	<project name="buildroot/linux/amlogic/meson_mali" path="vendor/amlogic/meson_mali"/>
-	<project name="buildroot/linux/amlogic/minigbm" path="vendor/amlogic/minigbm"/>
-	<project name="buildroot/linux/amlogic/libdrm_amlogic" path="vendor/amlogic/libdrm_amlogic"/>
-	<project name="buildroot/linux/amlogic/companion_apps" path="vendor/amlogic/companion_apps"/>
-	<project name="buildroot/vendor/amlogic/ledring" path="vendor/amlogic/ledring"/>
-	<project name="buildroot/linux/amlogic/ir_tools" path="vendor/amlogic/remotecfg" />
-	<project name="buildroot/linux/amlogic/test_tools" path="vendor/amlogic/test_tools"/>
-	<project name="buildroot/linux/amlogic/brcm-bsa" path="vendor/broadcom/brcm-bsa"/>
-	<project name="buildroot/vendor/marvell/bt/sd8977" path="vendor/marvell/bt/sd8977" />
-	<project name="buildroot/vendor/marvell/bt/sd8987" path="vendor/marvell/bt/sd8987" />
-	<project name="buildroot/linux/amlogic/tvin" path="hardware/tvin" />
-	<project name="buildroot/linux/buildroot" path="buildroot">
+	<project name="buildroot/kernel/common" path="kernel/aml-4.9" revision="refs/heads/s922_buildroot_master" />
+	<project name="buildroot_linux_amlogic_chromium" path="vendor/amlogic/chromium"/>
+	<project name="buildroot_vendor_amlogic_external_platinum" path="vendor/amlogic/external/platinum"/>
+	<project name="buildroot_vendor_amlogic_dvb" path="vendor/amlogic/dvb"/>
+	<project name="buildroot_amlogic_tools_system_control" path="vendor/amlogic/system_control"/>
+	<project name="buildroot_linux_amlogic_meson_mali" path="vendor/amlogic/meson_mali"/>
+	<project name="buildroot_linux_amlogic_minigbm" path="vendor/amlogic/minigbm"/>
+	<project name="buildroot_linux_amlogic_libdrm_amlogic" path="vendor/amlogic/libdrm_amlogic"/>
+	<project name="buildroot_linux_amlogic_companion_apps" path="vendor/amlogic/companion_apps"/>
+	<project name="buildroot_vendor_amlogic_ledring" path="vendor/amlogic/ledring"/>
+	<project name="buildroot_linux_amlogic_ir_tools" path="vendor/amlogic/remotecfg" />
+	<project name="buildroot_linux_amlogic_test_tools" path="vendor/amlogic/test_tools"/>
+	<project name="buildroot_linux_amlogic_brcm-bsa" path="vendor/broadcom/brcm-bsa"/>
+	<project name="buildroot_vendor_marvell_bt_sd8977" path="vendor/marvell/bt/sd8977" />
+	<project name="buildroot_vendor_marvell_bt_sd8987" path="vendor/marvell/bt/sd8987" />
+	<project name="buildroot_linux_amlogic_tvin" path="hardware/tvin" />
+	<project name="buildroot_linux_buildroot" path="buildroot">
 		<copyfile dest="Makefile" src="build/Makefile"/>
 	</project>
-	<project name="buildroot/linux/multimedia" path="multimedia" />
-	<project name="buildroot/avs/avs_client" path="multimedia/avs" />
-	<project name="buildroot/platform/packages/amlogic/LibPlayer" path="multimedia/libplayer/src" />
-	<project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins" revision="buildroot-openlinuxgst0"/>
-	<project name="buildroot/linux/multimedia/gstreamer_plugin" path="multimedia/gst-aml-plugins1" revision="buildroot-openlinuxgst1"/>
+	<project name="buildroot_linux_multimedia" path="multimedia" />
+	<project name="buildroot_avs_avs_client" path="multimedia/avs" />
+	<project name="buildroot_platform_packages_amlogic_LibPlayer" path="multimedia/libplayer/src" />
+	<project name="buildroot_linux_multimedia_gstreamer_plugin" path="multimedia/gst-aml-plugins" revision="buildroot-openlinuxgst0"/>
+	<project name="buildroot_linux_multimedia_gstreamer_plugin" path="multimedia/gst-aml-plugins1" revision="buildroot-openlinuxgst1"/>
 
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu-4.9" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf-4.9-2014.05_linux" path="toolchain/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf-4.9" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arc/arc-4.8.5" path="toolchain/gcc/linux-x86/arc/arc-4.8.5" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/Sourcery_G++_Lite-2010q1" path="toolchain/gcc/linux-x86/arm/Sourcery_G++_Lite-2010q1" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" />
-	<project name="buildroot/platform/prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_aarch64_gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu-4.9" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_arm_gcc-linaro-arm-linux-gnueabihf-4.9-2014.05_linux" path="toolchain/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf-4.9" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_arc_arc-4.8.5" path="toolchain/gcc/linux-x86/arc/arc-4.8.5" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_arm_Sourcery_G++_Lite-2010q1" path="toolchain/gcc/linux-x86/arm/Sourcery_G++_Lite-2010q1" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_aarch64_gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_aarch64_gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.2.1-2016.11-x86_64_aarch64-linux-gnu" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_arm_gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabihf" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_aarch64_gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_arm_gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_aarch64_gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" />
+	<project name="buildroot_platform_prebuilts_gcc_linux-x86_arm_gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" />
 
-	<project name="buildroot/platform/hardware/amlogic/media_modules" path="hardware/aml-4.9/amlogic/media_modules" />
-	<project name="buildroot/platform/hardware/amlogic/nand" path="hardware/aml-3.14/amlogic/nand" />
-	<project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-4.9/arm/gpu" revision="7ee9d980b03d696e08a6788a8775f4853d0b64fc" />
-	<project name="buildroot/platform/hardware/arm/gpu" path="hardware/aml-3.14/arm/gpu" revision="7ee9d980b03d696e08a6788a8775f4853d0b64fc" />
-	<project name="buildroot/platform/hardware/amlogic/pmu" path="hardware/aml-3.14/amlogic/pmu" />
-	<project name="buildroot/platform/hardware/amlogic/thermal" path="hardware/aml-3.14/amlogic/thermal" />
-	<project name="buildroot/platform/hardware/amlogic/touch" path="hardware/aml-3.14/amlogic/touch" />
+	<project name="buildroot_platform_hardware_amlogic_media_modules" path="hardware/aml-4.9/amlogic/media_modules" />
+	<project name="buildroot_platform_hardware_amlogic_nand" path="hardware/aml-3.14/amlogic/nand" />
+	<project name="buildroot_platform_hardware_arm_gpu" path="hardware/aml-4.9/arm/gpu" revision="7ee9d980b03d696e08a6788a8775f4853d0b64fc" />
+	<project name="buildroot_platform_hardware_arm_gpu" path="hardware/aml-3.14/arm/gpu" revision="7ee9d980b03d696e08a6788a8775f4853d0b64fc" />
+	<project name="buildroot_platform_hardware_amlogic_pmu" path="hardware/aml-3.14/amlogic/pmu" />
+	<project name="buildroot_platform_hardware_amlogic_thermal" path="hardware/aml-3.14/amlogic/thermal" />
+	<project name="buildroot_platform_hardware_amlogic_touch" path="hardware/aml-3.14/amlogic/touch" />
 
-	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-4.9/amlogic/wifi" />
-	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/aml-4.9/wifi/broadcom/drivers/ap6xxx" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-4.9/wifi/realtek/drivers/8188eu" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/aml-4.9/wifi/realtek/drivers/8189es" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/aml-4.9/wifi/realtek/drivers/8189ftv" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-4.9/wifi/realtek/drivers/8822bu" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723ds" path="hardware/aml-4.9/wifi/realtek/drivers/8723ds" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-4.9/wifi/realtek/drivers/8723bs" revision="ee9d86a7946ac299fcaa6abab7bccaa34fba1609" />
-	<project name="buildroot/platform/hardware/realtek/bluetooth" path="hardware/aml-4.9/realtek/bluetooth" />
-	<project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8977" path="hardware/aml-4.9/wifi/marvell/drivers/sd8977" />
-	<project name="buildroot/platform/hardware/wifi/marvell/drivers/sd8987" path="hardware/aml-4.9/wifi/marvell/drivers/sd8987" />
-	<project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-4.9/wifi/qualcomm/drivers/qca9377" revision="117c5511b5a4ee09c258a918549da48f0b458769" />
+	<project name="buildroot_platform_hardware_amlogic_wifi" path="hardware/aml-4.9/amlogic/wifi" />
+	<project name="buildroot_platform_hardware_wifi_broadcom_drivers_ap6xxx" path="hardware/aml-4.9/wifi/broadcom/drivers/ap6xxx" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8188eu" path="hardware/aml-4.9/wifi/realtek/drivers/8188eu" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8189es" path="hardware/aml-4.9/wifi/realtek/drivers/8189es" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8189ftv" path="hardware/aml-4.9/wifi/realtek/drivers/8189ftv" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8822bu" path="hardware/aml-4.9/wifi/realtek/drivers/8822bu" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8723ds" path="hardware/aml-4.9/wifi/realtek/drivers/8723ds" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8723bs" path="hardware/aml-4.9/wifi/realtek/drivers/8723bs" revision="ee9d86a7946ac299fcaa6abab7bccaa34fba1609" />
+	<project name="buildroot_platform_hardware_realtek_bluetooth" path="hardware/aml-4.9/realtek/bluetooth" />
+	<project name="buildroot_platform_hardware_wifi_marvell_drivers_sd8977" path="hardware/aml-4.9/wifi/marvell/drivers/sd8977" />
+	<project name="buildroot_platform_hardware_wifi_marvell_drivers_sd8987" path="hardware/aml-4.9/wifi/marvell/drivers/sd8987" />
+	<project name="buildroot_platform_hardware_wifi_qualcomm_drivers_qca9377" path="hardware/aml-4.9/wifi/qualcomm/drivers/qca9377" revision="117c5511b5a4ee09c258a918549da48f0b458769" />
 
-	<project name="buildroot/platform/hardware/amlogic/wifi" path="hardware/aml-3.14/amlogic/wifi" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188eu" path="hardware/aml-3.14/wifi/realtek/drivers/8188eu" />
-	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7601" path="hardware/aml-3.14/wifi/mtk/drivers/mt7601" />
-	<project name="buildroot/platform/hardware/wifi/mtk/drivers/mt7603" path="hardware/aml-3.14/wifi/mtk/drivers/mt7603" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8188ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8188ftv" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192cu" path="hardware/aml-3.14/wifi/realtek/drivers/8192cu" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192du" path="hardware/aml-3.14/wifi/realtek/drivers/8192du" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192eu" path="hardware/aml-3.14/wifi/realtek/drivers/8192eu" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8192es" path="hardware/aml-3.14/wifi/realtek/drivers/8192es" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189es" path="hardware/aml-3.14/wifi/realtek/drivers/8189es" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8189ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8189ftv" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bs" path="hardware/aml-3.14/wifi/realtek/drivers/8723bs" revision="c3eef6c8f95b80a9d8c92537c2f9e5f3bfb393ee" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723au" path="hardware/aml-3.14/wifi/realtek/drivers/8723au" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8811au" path="hardware/aml-3.14/wifi/realtek/drivers/8811au" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8812au" path="hardware/aml-3.14/wifi/realtek/drivers/8812au" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8723bu" path="hardware/aml-3.14/wifi/realtek/drivers/8723bu" />
-	<project name="buildroot/platform/hardware/wifi/realtek/drivers/8822bu" path="hardware/aml-3.14/wifi/realtek/drivers/8822bu" />
-	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/ap6xxx" path="hardware/aml-3.14/wifi/broadcom/drivers/ap6xxx" />
-	<project name="buildroot/platform/hardware/wifi/broadcom/drivers/usi" path="hardware/aml-3.14/wifi/broadcom/drivers/usi" />
-	<project name="buildroot/platform/hardware/wifi/qualcomm/drivers/qca9377" path="hardware/aml-3.14/wifi/qualcomm/drivers/qca9377" revision="f465fdc0a089c68e76c8367c23f4b024948fd5ed" />
+	<project name="buildroot_platform_hardware_amlogic_wifi" path="hardware/aml-3.14/amlogic/wifi" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8188eu" path="hardware/aml-3.14/wifi/realtek/drivers/8188eu" />
+	<project name="buildroot_platform_hardware_wifi_mtk_drivers_mt7601" path="hardware/aml-3.14/wifi/mtk/drivers/mt7601" />
+	<project name="buildroot_platform_hardware_wifi_mtk_drivers_mt7603" path="hardware/aml-3.14/wifi/mtk/drivers/mt7603" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8188ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8188ftv" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8192cu" path="hardware/aml-3.14/wifi/realtek/drivers/8192cu" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8192du" path="hardware/aml-3.14/wifi/realtek/drivers/8192du" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8192eu" path="hardware/aml-3.14/wifi/realtek/drivers/8192eu" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8192es" path="hardware/aml-3.14/wifi/realtek/drivers/8192es" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8189es" path="hardware/aml-3.14/wifi/realtek/drivers/8189es" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8189ftv" path="hardware/aml-3.14/wifi/realtek/drivers/8189ftv" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8723bs" path="hardware/aml-3.14/wifi/realtek/drivers/8723bs" revision="c3eef6c8f95b80a9d8c92537c2f9e5f3bfb393ee" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8723au" path="hardware/aml-3.14/wifi/realtek/drivers/8723au" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8811au" path="hardware/aml-3.14/wifi/realtek/drivers/8811au" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8812au" path="hardware/aml-3.14/wifi/realtek/drivers/8812au" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8723bu" path="hardware/aml-3.14/wifi/realtek/drivers/8723bu" />
+	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8822bu" path="hardware/aml-3.14/wifi/realtek/drivers/8822bu" />
+	<project name="buildroot_platform_hardware_wifi_broadcom_drivers_ap6xxx" path="hardware/aml-3.14/wifi/broadcom/drivers/ap6xxx" />
+	<project name="buildroot_platform_hardware_wifi_broadcom_drivers_usi" path="hardware/aml-3.14/wifi/broadcom/drivers/usi" />
+	<project name="buildroot_platform_hardware_wifi_qualcomm_drivers_qca9377" path="hardware/aml-3.14/wifi/qualcomm/drivers/qca9377" revision="f465fdc0a089c68e76c8367c23f4b024948fd5ed" />
 
 	<!-- add projects -->
 	<project name="buildroot/uboot" path="bootloader/uboot" revision="refs/heads/s922_buildroot_master"/>
