@@ -59,7 +59,6 @@
 	<project name="buildroot_platform_hardware_realtek_bluetooth" path="hardware/aml-4.9/realtek/bluetooth" />
 	<project name="buildroot_platform_hardware_wifi_marvell_drivers_sd8977" path="hardware/aml-4.9/wifi/marvell/drivers/sd8977" />
 	<project name="buildroot_platform_hardware_wifi_marvell_drivers_sd8987" path="hardware/aml-4.9/wifi/marvell/drivers/sd8987" />
-	<project name="buildroot_platform_hardware_wifi_qualcomm_drivers_qca9377" path="hardware/aml-4.9/wifi/qualcomm/drivers/qca9377" revision="117c5511b5a4ee09c258a918549da48f0b458769" />
 
 	<project name="buildroot_platform_hardware_amlogic_wifi" path="hardware/aml-3.14/amlogic/wifi" />
 	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8188eu" path="hardware/aml-3.14/wifi/realtek/drivers/8188eu" />
@@ -80,7 +79,6 @@
 	<project name="buildroot_platform_hardware_wifi_realtek_drivers_8822bu" path="hardware/aml-3.14/wifi/realtek/drivers/8822bu" />
 	<project name="buildroot_platform_hardware_wifi_broadcom_drivers_ap6xxx" path="hardware/aml-3.14/wifi/broadcom/drivers/ap6xxx" />
 	<project name="buildroot_platform_hardware_wifi_broadcom_drivers_usi" path="hardware/aml-3.14/wifi/broadcom/drivers/usi" />
-	<project name="buildroot_platform_hardware_wifi_qualcomm_drivers_qca9377" path="hardware/aml-3.14/wifi/qualcomm/drivers/qca9377" revision="f465fdc0a089c68e76c8367c23f4b024948fd5ed" />
 
 	<!-- add projects -->
 	<project name="buildroot/uboot" path="bootloader/uboot" revision="refs/heads/s922_buildroot_master"/>
