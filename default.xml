@@ -81,5 +81,5 @@
 	<project name="buildroot_platform_hardware_wifi_broadcom_drivers_usi" path="hardware/aml-3.14/wifi/broadcom/drivers/usi" />
 
 	<!-- add projects -->
-	<project name="buildroot/uboot" path="bootloader/uboot" revision="refs/heads/s922_buildroot_master"/>
+	<project name="u-boot" path="bootloader/uboot" revision="refs/heads/odroidn2-v2015.01"/>
 </manifest>
